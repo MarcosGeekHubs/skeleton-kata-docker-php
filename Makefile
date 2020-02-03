@@ -14,10 +14,10 @@ docker-start:
 	docker-compose up -d
 
 docker-tests:
-	@docker exec -it kata-test bash -c "./vendor/bin/phpunit"
+	@docker exec -it kata-test bash -c "./bin/phpunit"
 
 docker-coverage:
-	@docker exec -it kata-test bash -c "./vendor/bin/phpunit --coverage-text"
+	@docker exec -it kata-test bash -c "./bin/phpunit --coverage-text"
 
 docker-ssh:
 	@docker exec -it kata-test bash
