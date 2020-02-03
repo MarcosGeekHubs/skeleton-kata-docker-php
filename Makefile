@@ -7,6 +7,9 @@ docker-build:
 	docker-compose up -d
 	@docker exec -it kata-test bash -c "composer install --prefer-source --no-interaction"
 
+docker-composer-install
+    	@docker exec -it kata-test bash -c "composer install --prefer-source --no-interaction"
+
 docker-down:
 	docker-compose down
 
