@@ -5,10 +5,10 @@ namespace Kata\Test;
 
 use Kata\Factorial;
 
+use PHPUnit\Framework\TestCase;
 
-class KataTest extends \PHPUnit_Framework_TestCase
+class KataTest extends TestCase
 {
-
 
 
     /** @test */
